@@ -32,9 +32,9 @@
     </div>
     <div class="background-button"></div>
 
-    <div class="card">
+    <div class="card" id="card">
       <div class="star-fill">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none" viewBox="0 0 40 41">
+        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none" viewBox="0 0 40 41">
           <path fill="#AD28EB"
             d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z" />
         </svg>
@@ -43,9 +43,20 @@
 
       <div class="fill">
         <p>What is Frontend Mentor, and how will it help me ?</p>
-        <i class="bi bi-plus-circle-fill" id="bi"></i>
-      </div>
+        <i id="minus">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+            <path fill="#301534"
+              d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
+          </svg>
 
+        </i>
+        <i id="bi">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+            <path fill="#AD28EB"
+              d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+          </svg>
+        </i>
+      </div>
       <p id="paragraph">Frontend Mentor offers realistic coding challenges to help <br>developers improve their
         frontend coding skills with projects in <br> HTML, CSS, and JavaScript. It's suitable for
         all levels and ideal for <br> portfolio building.</p>
@@ -53,17 +64,32 @@
       <hr>
       <div class="fill">
         <p>Is Frontend Mentor free ?</p>
-        <i class="bi bi-plus-circle-fill"></i>
+        <i id="bi">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+            <path fill="#AD28EB"
+              d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+          </svg>
+        </i>
       </div>
       <hr>
       <div class="fill">
         <p>Can I use Frontend Mentor projects in my portfolio ?</p>
-        <i class="bi bi-plus-circle-fill"></i>
+        <i id="bi">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+            <path fill="#AD28EB"
+              d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+          </svg>
+        </i>
       </div>
       <hr>
       <div class="fill">
         <p>How can I get help if I'm stuck on a challenge ?</p>
-        <i class="bi bi-plus-circle-fill"></i>
+        <i id="bi">
+          <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+            <path fill="#AD28EB"
+              d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+          </svg>
+        </i>
       </div>
 
     </div>
@@ -72,19 +98,50 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div><br><br><br> -->
-<script>
- document.getElementById('bi').addEventListener('click', function() {
-    let textElement = document.getElementById('paragraph');
-    
+  <script>
+    document.getElementById('bi').addEventListener('click', function () {
+      let textElement = document.getElementById('paragraph');
+      let formCard = document.getElementById('card');
+      let iconMinus = document.getElementById('minus');
+      let iconPlus = document.getElementById('bi')
 
-    if (textElement.style.display === 'none' || textElement.style.display === '') {
+      if (textElement.style.display === 'none' || textElement.style.display === '') {
         textElement.style.display = 'block';
-    } else {
+        iconMinus.style.display = 'flex';
+        iconPlus.style.display = 'none';
+        formCard.style.height = '60%';
+      } else {
         textElement.style.display = 'none';
-    }
-});
+        iconMinus.style.display = 'none';
+        iconPlus.style.display = 'block';
+        formCard.style.height = '57%';
+        
+      }
 
-</script>
+    });
+    document.getElementById('minus').addEventListener('click', function () {
+      let textElement = document.getElementById('paragraph');
+      let iconMinus = document.getElementById('minus');
+      let formCard = document.getElementById('card');
+      let iconPlus = document.getElementById('bi')
+
+
+      if (textElement.style.display === 'none' || textElement.style.display === '') {
+        textElement.style.display = 'block';
+        formCard.style.height = '58%';
+        
+      } else {
+        textElement.style.display = 'none';
+        textElement.style.textAlign = 'justify';
+        textElement.style.lineHeight = '1'
+        formCard.style.height = '50%';
+        iconPlus.style.display = 'flex';
+        iconMinus.style.display = 'none';
+        
+      }
+    });
+
+  </script>
 
 
 </body>

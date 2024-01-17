@@ -45,7 +45,7 @@ body {
     top: 28%;
     left: 0;
     width: 34%;
-    height: 52%;
+    height: 56%;
     background-color: hsl(0, 0%, 100%);
     margin-left: 34rem;
     border-radius: 10px;
@@ -67,22 +67,27 @@ hr {
 
 .fill {
     display: flex;
-    margin: 1.5rem 4rem 1.5rem 0;
+    margin: 1rem 3rem 1rem 0;
     font-weight: bold;
     justify-content: space-between;
 
 }
 
-.bi-plus-circle-fill {
-    color: hsl(276, 73%, 65%);
-
+.fill svg{
+    margin-top: -0.5rem;
 }
 
+#minus{
+    display: none;
+}
 
 #paragraph {
     text-align: justify;
     margin-bottom: 1rem;
+    margin-right: 4rem;
     display: none;
+    line-height: 1.5;
+    font-size: 0.8rem;
 }
 
 
@@ -108,18 +113,25 @@ hr {
         top: 22.5%;
     }
    
-
+    #paragraph {
+        text-align: justify;
+        /* margin-bottom: 1rem; */
+        margin-right: 2rem;
+        line-height: 1;
+        font-size: 0.6rem;
+    }
     .card {
         position: absolute;
-        top: 20%;
+        top: 16%;
         left: 0;
-        width: 38%;
-        height: 31%;
+        width: 60%;
+        height: 35%;
         background-color: hsl(0, 0%, 100%);
-        margin-left: 9rem;
+        margin-left: 4rem;
         border-radius: 8px;
         padding-left: 1rem;
         font-size: 0.4rem;
+        line-height: 1;
     }
 
     .star-fill {
@@ -133,7 +145,7 @@ hr {
         margin-top: 0.5rem;
     }
     .star-fill svg{
-        font-size: 0.1;
+        font-size: 0.1rem;
     }
     hr {
         width: 100px;
@@ -142,10 +154,10 @@ hr {
 
     .fill {
         display: flex;
-        margin: 1rem 1rem 1rem 0;
+        margin: 1rem 1rem 0.11rem 0;
         font-weight: bold;
         justify-content: space-between;
-    
+        font-size: 0.7rem;
     }
     
     
