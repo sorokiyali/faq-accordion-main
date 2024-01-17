@@ -14,7 +14,7 @@ body {
     font-size: 16px;
     height: 100vh;
     overflow: hidden;
-    background-color: hsl(275, 68%, 89%);
+    background-color: hsl(274, 71%, 92%);
 
 
 }
@@ -42,10 +42,10 @@ body {
 
 .card {
     position: absolute;
-    top: 28%;
+    top: 20%;
     left: 0;
     width: 34%;
-    height: 56%;
+    height: 50%;
     background-color: hsl(0, 0%, 100%);
     margin-left: 32rem;
     border-radius: 10px;
