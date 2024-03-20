@@ -36,9 +36,6 @@ body {
     height: auto;
 }
 
-.background-button {
-    
-}
 
 .card {
     position: absolute;
@@ -51,6 +48,9 @@ body {
     border-radius: 10px;
     padding-left: 2rem;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+
 }
 
 hr {
@@ -73,11 +73,11 @@ hr {
 
 }
 
-.fill svg{
+.fill svg {
     margin-top: -0.5rem;
 }
 
-#minus{
+#minus {
     display: none;
 }
 
@@ -97,6 +97,18 @@ hr {
     color: hsl(276, 73%, 65%);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -10rem;
+
+
+}
+
+.attribution a {
+    color: white;
+}
+
 @media only screen and (max-width: 375px) {
 
     .background-top,
@@ -112,26 +124,25 @@ hr {
         background-color: hsl(275, 100%, 97%);
         top: 22.5%;
     }
-   
+
     #paragraph {
         text-align: justify;
-        /* margin-bottom: 1rem; */
         margin-right: 2rem;
         line-height: 1;
         font-size: 0.6rem;
     }
+
     .card {
         position: absolute;
-        top: 16%;
-        left: 0;
-        width: 60%;
+        margin-left: 2rem;
+        width: 80%;
         height: 35%;
         background-color: hsl(0, 0%, 100%);
-        margin-left: 4rem;
         border-radius: 8px;
         padding-left: 1rem;
         font-size: 0.4rem;
         line-height: 1;
+       
     }
 
     .star-fill {
@@ -141,12 +152,14 @@ hr {
         margin-top: 0.5rem;
     }
 
-    .star-fill h1{
+    .star-fill h1 {
         margin-top: 0.5rem;
     }
-    .star-fill svg{
+
+    .star-fill svg {
         font-size: 0.1rem;
     }
+
     hr {
         width: 100px;
         border: 0.1px solid rgb(213, 210, 210);
@@ -159,6 +172,6 @@ hr {
         justify-content: space-between;
         font-size: 0.7rem;
     }
-    
-    
+
+
 }
